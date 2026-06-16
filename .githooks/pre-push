@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+echo "Running ruff check..."
+uv run ruff check .
+
+echo "Running ruff format --check..."
+uv run ruff format --check .
